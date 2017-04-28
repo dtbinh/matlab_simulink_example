@@ -1,6 +1,6 @@
 clear
 
-simulink_parameter
+simulink_parameter %load parameters for simulink and this matlab script
 
 s = tf('s')
 P = Ks/(s*taup+1)
@@ -19,6 +19,7 @@ clf
 step(L0)
 grid on
 
+%% Regulation block and Loop sim
 wco_desired = 100 % approx 90° phase margin
 Kp1=0.1 % pull down amplitude of -20dB
 L1 = Kp1*L0
@@ -43,7 +44,7 @@ sampling_margin = 2;
 ws = 2*wco_desired * sampling_margin;
 fs = ws/(2*pi); % fs minimum
 % round sampling frequency (Einfache Zahl nehmen)
-fs = 10000; %Muss grösser als fs sein, die vorher berechnet wurde
+fs = 100; %Muss grösser als fs sein, die vorher berechnet wurde
             %Achtung: Z-Transform Koeffizenten sind abhängig von
             %Abtastfrequenz
 
