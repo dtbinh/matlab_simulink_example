@@ -43,7 +43,7 @@ sampling_margin = 2;
 ws = 2*wco_desired * sampling_margin;
 fs = ws/(2*pi); % fs minimum
 % round sampling frequency (Einfache Zahl nehmen)
-fs = 1000; %Muss grösser als fs sein, die vorher berechnet wurde
+fs = 10000; %Muss grösser als fs sein, die vorher berechnet wurde
             %Achtung: Z-Transform Koeffizenten sind abhängig von
             %Abtastfrequenz
 
