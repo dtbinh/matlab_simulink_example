@@ -1,0 +1,15 @@
+Simulink Elements:
+Coontinuous:
+	Transferfunction
+	
+Sources:
+	Constants
+	
+Sinks:
+	Scope
+	
+Commonly Used Blocks:
+	Multiplexer
+	
+-Write Parameters in Matlab Script (and run it)
+-Model Configuration Parameters
